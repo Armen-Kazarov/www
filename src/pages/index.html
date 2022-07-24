@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!--
+            The following 2 meta tags must come first in the <head>
+            to consistently ensure proper document rendering.
+            Any other head element should come after these tags.
+        -->
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <!-- Page title -->
+        <title>Gold bull</title>
+
+        <!-- Short description of the document (limit to 150 characters) -->
+        <meta name="description" content="Page description" />
+
+        <!-- Social metatags -->
+        <meta property="og:title" content="Unique page title" />
+        <meta property="og:description" content="Page description" />
+        <meta property="og:image" content="https://www.mywebsite.com/image.jpg" />
+        <meta property="og:image:alt" content="Image description" />
+        <meta property="og:locale" content="en_GB" />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://www.mywebsite.com/page" />
+        <meta name="twitter:card" content="summary_large_image" />
+
+        <!-- Theme Color for Chrome, Firefox OS and Opera -->
+        <meta name="theme-color" content="#000000" />
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+        <!-- SVG favicon for modern browsers. -->
+        <link rel="icon" href="/images/favicon.svg" type="image/svg+xml" />
+
+        <!-- The 180×180px icon Apple devices will use if you add the page to your home screen. -->
+        <link rel="apple-touch-icon" href="/images/apple-touch-icon.png" />
+
+        <!-- Prevent SEO issues caused by duplicate content by specifying the original source for pages that are available on multiple URLs. -->
+        <link rel="canonical" href="https://www.mywebsite.com/page" />
+
+        <!-- Link Swiper's CSS -->
+        <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+        <!-- Swiper JS -->
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+        <!-- inject:css -->
+        <!-- endinject -->
+    </head>
+
+    <body>
+        @@include('../includes/header.html')
+        <main>
+            @@include('../includes/hero.html')
+            @@include('../includes/articles.html')
+        </main>
+
+        <!-- inject:js -->
+        <!-- endinject -->
+    </body>
+</html>

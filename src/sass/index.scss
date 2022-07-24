@@ -1,0 +1,20 @@
+/*
+ * Import all top level partials here
+ */
+@import 'normalize';
+@import 'base/fonts';
+@import 'base/scaffolding';
+@import 'helpers/variables';
+@import 'utils/mixins';
+@import 'utils/placeholders';
+
+/* Components */
+@import 'components/container';
+@import 'components/burgerMenu';
+@import 'components/sectionTitle';
+@import 'components/swiper';
+
+/* Sections */
+@import 'sections/header';
+@import 'sections/hero';
+@import 'sections/articles';

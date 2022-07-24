@@ -1,0 +1,131 @@
+.articles {
+  padding: 90px 0;
+
+  &::before {
+    @extend %title-section-border;
+    background-color: $secondary-color;
+  }
+
+  &__text-wrapper {
+    text-align: center;
+    margin-bottom: 88px;
+  }
+
+  &__title {
+    margin-top: 42px;
+    margin-bottom: 40px;
+    color: #5F5F5F;
+  }
+
+  .section-description {
+    @include font(20px, 500, 23px);
+    color: #B3B2B2;
+
+    &:first-letter {
+      text-transform: uppercase;
+    }
+
+    span {
+      display: block;
+    }
+  }
+
+  .buttons-wrapper {
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 26px;
+  }
+
+  .btn {
+    @include font(14px, 400, 16px);
+    color: $first-color;
+    background-color: $secondary-color;
+    border: 1px solid #C4C4C4;
+    padding: 13px 43px;
+    transition-property:
+      background-color;
+    transition-duration: 0.2s;
+    transition-timing-function: linear;
+
+    &:first-letter {
+      text-transform: uppercase;
+    }
+
+    &--indent {
+      margin-right: 12px;
+    }
+
+    &-articles {
+      padding-right: 80px;
+      padding-left: 80px;
+    }
+
+    &:hover {
+      transition-property:
+      background-color;
+      transition-duration: 0.2s;
+      transition-timing-function: linear;
+      background-color: #2367f0;
+    }
+  }
+}
+
+@media (max-width: 1199px) {
+  .articles {
+    padding: 50px 0 76px;
+
+    &::before {
+    display: none;
+    }
+
+    &__text-wrapper {
+      margin-bottom: 38px;
+    }
+
+    .btn--indent {
+      margin-right: 32px;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .articles {
+    position: relative;
+    padding: 46px 0 0;
+
+    &::before {
+      display: block;
+    }
+
+    .section-description {
+      @include font(15px, 500, 18px);
+      padding: 0 20px;
+
+      span {
+        display: inline;
+      }
+    }
+
+    .buttons-wrapper {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      bottom: 86px;
+      z-index: 1;
+      width: 230px;
+
+      .btn {
+        width: 100%;
+        text-align: center;
+        padding-right:0;
+        padding-left: 0;
+
+        &--indent {
+          margin-right: 0;
+          margin-bottom: 10px;
+        }
+
+      }
+    }
+  }
+}

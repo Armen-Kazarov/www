@@ -1,0 +1,99 @@
+/* hide the checkbox */
+#menu__toggle {
+  opacity: 0;
+}
+
+/* button style */
+.menu__btn {
+  display: flex; /* используем flex для центрирования содержимого */
+  position: absolute;
+  width: 26px;
+  height: 26px;
+  cursor: pointer;
+  z-index: 1;
+}
+
+/* add "burger" */
+.menu__btn > span,
+.menu__btn > span::before,
+.menu__btn > span::after {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  background-color: $first-color;
+}
+
+.menu__btn > span::before {
+  content: '';
+  top: -6px;
+}
+.menu__btn > span::after {
+  content: '';
+  top: 6px;
+  right: 0;
+  width: 50%;
+}
+
+/* container menu */
+.menu__box {
+  background: linear-gradient(180deg, #4D4D4D 0%, rgba(0, 0, 0, 0.45) 100%), url("../../images/bg-images/header/header-tablet.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+  display: block;
+  position: fixed;
+  visibility: hidden;
+  top: 0;
+  right: -100%;
+  width: 100vw;
+  height: 100vh;
+}
+
+/* menu elements */
+
+#menu__toggle:checked ~ .menu__btn {
+  position: fixed;
+  top: 56px;
+  right: 56px;
+}
+
+#menu__toggle:checked ~ .menu__btn > span {
+  transform: rotate(45deg);
+}
+#menu__toggle:checked ~ .menu__btn > span::before {
+  top: 0;
+  transform: rotate(0);
+}
+#menu__toggle:checked ~ .menu__btn > span::after {
+  top: 0;
+  transform: rotate(90deg);
+  width: 100%;
+}
+#menu__toggle:checked ~ .menu__box {
+  visibility: visible;
+  right: 0;
+}
+
+.menu__btn > span,
+.menu__btn > span::before,
+.menu__btn > span::after {
+  transition-duration: .25s;
+}
+.menu__box {
+  transition-duration: .25s;
+}
+
+.menu__item {
+  width: 50%;
+  text-align: center;
+  transition-duration: .25s;
+}
+
+@media (max-width: 767px) {
+  #menu__toggle:checked ~ .menu__btn {
+    top: 40px;
+    right: 22px;
+  }
+}

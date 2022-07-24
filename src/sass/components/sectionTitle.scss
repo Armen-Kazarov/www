@@ -1,0 +1,7 @@
+.section-title {
+  font: $title-section-font;
+  
+  &:first-letter {
+    text-transform: uppercase;
+  }
+}
