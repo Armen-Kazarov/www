@@ -1,0 +1,98 @@
+.cycle {
+  padding: 68px 0 120px;
+  background: linear-gradient(0deg, rgba(4, 4, 4, 0.6), rgba(4, 4, 4, 0.6)), url("../../images/bg-images/section-cycle/desktop-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  &__title-wrapper {
+    &::before {
+      @extend %title-section-border;
+      background-color: $first-color;
+      margin-bottom: 46px;
+    }
+  }
+
+  &__title {
+    color: $first-color;
+    margin-bottom: 194px;
+  }
+
+  &__text {
+    text-align: center;
+    @include font(20px, 500, 23px);
+    color: $first-color;
+    margin-bottom: 112px;
+
+    &:first-letter {
+      text-transform: uppercase;
+    }
+  }
+
+  .btn-registration {
+    display: block;
+    padding: 18px 0;
+    text-align: center;
+    margin: 0 auto;
+    color: $first-color;
+    background-color: $secondary-color;
+    width: 126px;
+    @include font(14px, 400, 16px);
+    border: 1px solid #C4C4C4;
+    transition-property:
+      background-color;
+    transition-duration: 0.2s;
+    transition-timing-function: linear;
+
+    &:first-letter {
+      text-transform: uppercase;
+    }
+
+    &:hover {
+      transition-property:
+      background-color;
+      transition-duration: 0.2s;
+      transition-timing-function: linear;
+      background-color: #2367f0;
+    }
+  }
+}
+
+@media (max-width: 1199px) {
+  .cycle {
+    background: linear-gradient(0deg, rgba(4, 4, 4, 0.6), rgba(4, 4, 4, 0.6)), url("../../images/bg-images/section-cycle/tablet-bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
+@media (max-width: 767px) {
+  .cycle {
+    padding-top: 238px;
+    position: relative;
+    margin-top: 166px;
+    background: linear-gradient(0deg, rgba(4, 4, 4, 0.6), rgba(4, 4, 4, 0.6)), url("../../images/bg-images/section-cycle/mobile-bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    &__title-wrapper {
+      position: absolute;
+      top: -19%;
+
+      &::before {
+      background-color: #666666;
+      margin-bottom: 42px;
+     }
+    }
+
+    &__title {
+      color: #666666;
+      margin-bottom: 0;
+  }
+
+  &__text {
+    margin-bottom: 204px;
+  }
+
+
+  }
+}
