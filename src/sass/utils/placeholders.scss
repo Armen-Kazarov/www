@@ -6,3 +6,12 @@
   margin: 0 auto;
   border-radius: 2px;
 }
+
+%text-section-description {
+  @include font(20px, 500, 23px);
+  color: #B3B2B2;
+
+  &:first-letter {
+    text-transform: uppercase;
+  }
+}

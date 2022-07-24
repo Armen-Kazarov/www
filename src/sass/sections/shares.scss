@@ -1,0 +1,91 @@
+.shares {
+  padding: 88px 0 84px;
+
+  &__text-wrapper {
+    text-align: center;
+
+    &::before {
+      @extend %title-section-border;
+      background-color: $secondary-color;
+      margin-bottom: 24px;
+    }
+  }
+
+  &__title {
+    color: #5F5F5F;
+    margin-bottom: 22px;
+  }
+
+  .section-description {
+    @extend %text-section-description;
+
+    span {
+      display: block;
+    }
+  }
+
+  .shares-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 34px;
+    margin-bottom: 38px;
+
+    &__item {
+      width: 320px;
+      text-align: center;
+    }
+
+    &__img-wrapper {
+      margin-bottom: 20px;
+    }
+
+    &__item-title {
+      @include font(24px, 400, 28px);
+      margin-bottom: 18px;
+      color: #5F5F5F;
+
+      &:first-letter {
+        text-transform: uppercase;
+      }
+
+      span {
+        text-transform: uppercase;
+      }
+    }
+
+    &__item-text {
+      @include font(14px, 400, 16px);
+      color: #A6A6A6;
+    }
+  }
+
+  .button {
+    @include font(14px, 400, 16px);
+    color: $first-color;
+    background-color: $secondary-color;
+    padding: 12px 42px;
+    border: 1px solid hsla(0, 0%, 71%, 1);
+    border-image: linear-gradient(to left, hsla(0, 0%, 71%, 1), hsla(0, 0%, 77%, 0));
+    border-image-slice: 1;
+    cursor: pointer;
+    display: block;
+    margin: 0 auto;
+    transition-property:
+      background-color;
+    transition-duration: 0.2s;
+    transition-timing-function: linear;
+
+    &:first-letter {
+      text-transform: uppercase;
+    }
+
+    &:hover {
+      transition-property:
+      background-color;
+      transition-duration: 0.2s;
+      transition-timing-function: linear;
+      background-color: #2367f0;
+    }
+  }
+}
