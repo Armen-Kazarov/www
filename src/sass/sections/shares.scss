@@ -1,7 +1,7 @@
-.shares {
+.shares-section {
   padding: 88px 0 84px;
 
-  &__text-wrapper {
+  .shares-text-wrapper {
     text-align: center;
 
     &::before {
@@ -11,7 +11,7 @@
     }
   }
 
-  &__title {
+  .shares-title {
     color: #5F5F5F;
     margin-bottom: 22px;
   }
@@ -25,7 +25,6 @@
   }
 
   .shares-list {
-    display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     margin-top: 34px;
@@ -92,7 +91,7 @@
 }
 
 @media (max-width: 1199px) {
-  .shares {
+  .shares-section {
     padding-top: 68px;
     padding-bottom: 50px;
 
@@ -107,7 +106,7 @@
 }
 
 @media (max-width: 767px) {
-  .shares {
+  .shares-section {
     .shares-list {
       margin-top: 72px;
 

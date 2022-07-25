@@ -1,4 +1,4 @@
-.articles {
+.articles-section {
   padding: 90px 0;
 
   &::before {
@@ -6,12 +6,12 @@
     background-color: $secondary-color;
   }
 
-  &__text-wrapper {
+  .articles-text-wrapper {
     text-align: center;
     margin-bottom: 88px;
   }
 
-  &__title {
+  .articles-title {
     margin-top: 42px;
     margin-bottom: 40px;
     color: #5F5F5F;
@@ -66,14 +66,14 @@
 }
 
 @media (max-width: 1199px) {
-  .articles {
+  .articles-section {
     padding: 50px 0 76px;
 
     &::before {
     display: none;
     }
 
-    &__text-wrapper {
+    .articles-text-wrapper {
       margin-bottom: 38px;
     }
 
@@ -84,7 +84,7 @@
 }
 
 @media (max-width: 767px) {
-  .articles {
+  .articles-section {
     position: relative;
     padding: 46px 0 0;
 
@@ -119,7 +119,6 @@
           margin-right: 0;
           margin-bottom: 10px;
         }
-
       }
     }
   }
