@@ -57,6 +57,7 @@
     &__item-text {
       @include font(14px, 400, 16px);
       color: #A6A6A6;
+      padding: 0 16px;
     }
   }
 
@@ -86,6 +87,41 @@
       transition-duration: 0.2s;
       transition-timing-function: linear;
       background-color: #2367f0;
+    }
+  }
+}
+
+@media (max-width: 1199px) {
+  .shares {
+    padding-top: 68px;
+    padding-bottom: 50px;
+
+    .shares-list {
+      margin-top: 60px;
+
+      &__item:nth-last-of-type(1) {
+        margin-top: 54px;
+      } 
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .shares {
+    .shares-list {
+      margin-top: 72px;
+
+      &__item:nth-last-of-type(1) {
+        margin-top: 0;
+      } 
+
+      &__item:not(:nth-last-of-type(1)) {
+        margin-bottom: 72px;
+      }
+    }
+
+    .button {
+      display: none;
     }
   }
 }
