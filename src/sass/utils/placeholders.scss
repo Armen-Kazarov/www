@@ -9,7 +9,7 @@
 
 %text-section-description {
   @include font(20px, 500, 23px);
-  color: #B3B2B2;
+  color: $third-color;
 
   &:first-letter {
     text-transform: uppercase;
