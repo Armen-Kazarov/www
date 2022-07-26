@@ -4,14 +4,6 @@
   background-repeat: no-repeat;
   background-size: cover;
 
-  .cycle-title-wrapper {
-    &::before {
-      @extend %title-section-border;
-      background-color: $first-color;
-      margin-bottom: 46px;
-    }
-  }
-
   .cycle-title {
     color: $first-color;
     margin-bottom: 194px;
@@ -29,23 +21,10 @@
   }
 
   .btn-registration {
-    display: block;
-    padding: 18px 0;
-    text-align: center;
-    margin: 0 auto;
-    color: $first-color;
-    background-color: $secondary-color;
-    width: 126px;
-    @include font(14px, 400, 16px);
-    border: 1px solid #C4C4C4;
     transition-property:
       background-color;
     transition-duration: 0.2s;
     transition-timing-function: linear;
-
-    &:first-letter {
-      text-transform: uppercase;
-    }
 
     &:hover {
       transition-property:

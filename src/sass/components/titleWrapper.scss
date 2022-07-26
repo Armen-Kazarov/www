@@ -1,0 +1,7 @@
+.title-section-wrapper {
+  &::before {
+    @extend %title-section-border;
+    background-color: $first-color;
+    margin-bottom: 46px;
+  }
+}
