@@ -1,0 +1,30 @@
+.reviews-section {
+  padding: 90px 0 60px;
+
+  .reviews-text-wrapper {
+    text-align: center;
+
+    &::before {
+      @extend %title-section-border;
+      background-color: $secondary-color;
+      margin-bottom: 46px;
+    }
+
+    .reviews-title {
+      color: #727272;
+      margin-bottom: 42px;
+    }
+
+    .section-description {
+      @extend %text-section-description;
+
+      span {
+        display: block;
+      }
+
+      &--indent {
+        margin-bottom: 44px;
+      }
+    }
+  }
+}
