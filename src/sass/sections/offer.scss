@@ -4,8 +4,12 @@
   background-repeat: no-repeat;
   background-size: cover;
 
-  .offer-title {
-    color: $first-color;
+  .title-section-wrapper--indent {
+    margin-bottom: 72px;
+
+    .offer-title {
+      color: $first-color;
+    }
   }
 
   .section-offer-content-wrapper {
@@ -15,6 +19,32 @@
 
     &:first-letter {
       text-transform: uppercase;
+    }
+
+    .offer-text {
+      @include font(20px, 500, 23px);
+      margin-bottom: 32px;
+    }
+
+    .info-of-privacy-policy {
+      font-family: 'Montserrat';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 15px;
+      width: 72.78%;
+      text-align: justify;
+      margin-bottom: 102px;
+
+      &:first-letter {
+        text-transform: uppercase;
+      }
+
+      &__link {
+        color: $first-color;
+        text-decoration: underline;
+        text-transform: capitalize;
+      }
     }
 
     .btn-registration--position {
@@ -33,7 +63,63 @@
       }
     }
   }
+}
 
+@media (max-width: 1199px) and (min-width: 768px) {
+  .special-offer-section {
+    display: none;
+  }
+}
 
-  
+@media (max-width: 767px) {
+  .special-offer-section {
+    background: linear-gradient(0deg, rgba(4, 4, 4, 0.7), rgba(4, 4, 4, 0.7)), url("../../images/bg-images/section-special-offer/mobile-bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    padding-top: 86px;
+    padding-bottom: 78px;
+    margin-top: 226px;
+
+    .title-section-wrapper--indent {
+      position: absolute;
+      top: -138px;
+      left: 50%;
+      transform: translateX(-50%);
+      margin-bottom: 0;
+
+      &::before {
+        background-color: $secondary-color;
+        margin-bottom: 24px;
+      }
+
+     .offer-title {
+       color: #5F5F5F;
+     }
+   }
+
+    .section-offer-content-wrapper {
+      color: $first-color;
+      width: 100%;
+      padding-left: 18px;
+      padding-right: 18px;
+      text-align: center;
+
+      .offer-text {
+        font-size: 17px;
+        line-height: 20px;
+        margin-bottom: 68px;
+      }
+
+      .info-of-privacy-policy {
+        width: 100%;
+        margin-bottom: 96px;
+        text-align: center;
+      }
+
+      .btn-registration--position {
+        margin: auto;
+      }
+    }
+  }
 }
