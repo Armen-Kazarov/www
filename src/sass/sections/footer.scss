@@ -18,6 +18,7 @@
       span.upper {
         text-transform: uppercase;
       }
+
       color: $first-color;
     }
 
@@ -39,9 +40,13 @@
       font-weight: 700;
     }
 
-    // &__sublist-item:not(:first-child), &__sublist-item:not(:last-child) { ?????????
-    //   margin-bottom: 20px;
-    // }
+    &__sublist-item {
+      @include font(14px, 400, 16px);
+
+      &:not(:nth-child(-n+2)) {
+        margin-top: 20px;
+      }
+    }
 
     &__sublist-item--indent {
       margin-bottom: 34px;
@@ -52,4 +57,15 @@
     }
   }
 
+  .footer-info-list {
+    align-items: center;
+    border-top: 2px solid $first-color;
+    padding-top: 4px;
+    margin-top: 60px;
+
+    &__item {
+      @include font(10px, 500, 12px);
+    }
+  }
 }
+
