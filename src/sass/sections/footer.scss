@@ -3,4 +3,53 @@
   padding-bottom: 18px;
   background: #5773AB;
 
+  .footer-menu-list,
+  .footer-info-list {
+    justify-content: space-between;
+    color: $first-color;
+
+    &__item:first-letter,
+    &__sublist-item:first-letter {
+      text-transform: uppercase;
+    }
+    
+    &__item-link,
+    &__sublist-item-link {
+      span.upper {
+        text-transform: uppercase;
+      }
+      color: $first-color;
+    }
+
+    &__item-link:first-letter {
+      text-transform: uppercase;
+    }
+ }
+
+  .footer-menu-list {
+    &__item--upper {
+      text-transform: uppercase;
+    }
+
+    &__item-link--weight {
+      @include font(24px, 500, 28px);
+    }
+
+    &__item-company-name {
+      font-weight: 700;
+    }
+
+    // &__sublist-item:not(:first-child), &__sublist-item:not(:last-child) { ?????????
+    //   margin-bottom: 20px;
+    // }
+
+    &__sublist-item--indent {
+      margin-bottom: 34px;
+    }
+
+    &__sublist-item--visibility {
+      display: none;
+    }
+  }
+
 }
