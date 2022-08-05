@@ -5,7 +5,7 @@
 
 /* button style */
 .menu__btn {
-  display: flex; /* используем flex для центрирования содержимого */
+  display: flex;
   position: absolute;
   width: 26px;
   height: 26px;
@@ -37,13 +37,13 @@
 
 /* container menu */
 .menu__box {
-  background: linear-gradient(180deg, #4D4D4D 0%, rgba(0, 0, 0, 0.45) 100%), url("../../images/bg-images/header/header-tablet.jpg");
+  background: linear-gradient(180deg, #4D4D4D 0%, rgba(0, 0, 0, 0.45) 100%), url("../images/bg-images/header/header-tablet.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   width: 100vw;
   height: 100vh;
   display: block;
-  position: fixed;
+  position: absolute;
   visibility: hidden;
   top: 0;
   right: -100%;
@@ -54,7 +54,7 @@
 /* menu elements */
 
 #menu__toggle:checked ~ .menu__btn {
-  position: fixed;
+  position: absolute;
   top: 56px;
   right: 56px;
 }

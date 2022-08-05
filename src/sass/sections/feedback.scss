@@ -1,5 +1,5 @@
 .feedback-section {
-  background: linear-gradient(0deg, rgba(248, 250, 255, 0.9), rgba(248, 250, 255, 0.9)), url("../../images/bg-images/feedback-section/desktop.jpg");
+  background: linear-gradient(0deg, rgba(248, 250, 255, 0.9), rgba(248, 250, 255, 0.9)), url("../images/bg-images/feedback-section/desktop.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   padding: 94px 0 100px;
@@ -84,7 +84,7 @@
 
 @media (max-width: 1199px) {
   .feedback-section {
-    background: linear-gradient(0deg, rgba(248, 250, 255, 0.9), rgba(248, 250, 255, 0.9)), url("../../images/bg-images/feedback-section/tablet.jpg");
+    background: linear-gradient(0deg, rgba(248, 250, 255, 0.9), rgba(248, 250, 255, 0.9)), url("../images/bg-images/feedback-section/tablet.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     padding-bottom: 36px;
@@ -106,7 +106,7 @@
 
 @media (max-width: 767px) {
   .feedback-section {
-    background: linear-gradient(0deg, rgba(248, 250, 255, 0.9), rgba(248, 250, 255, 0.9)), url("../../images/bg-images/feedback-section/mobile.jpg");
+    background: linear-gradient(0deg, rgba(248, 250, 255, 0.9), rgba(248, 250, 255, 0.9)), url("../images/bg-images/feedback-section/mobile.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     padding-top: 60px;

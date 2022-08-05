@@ -5,10 +5,11 @@
   "main": "index.js",
   "scripts": {
     "start": "cross-env PORT=7070 gulp start --development",
-    "build": "gulp build --production",
-    "lint-styles": "stylelint './src/sass/**/*.scss' --syntax scss --fix"
+    "build": "gulp build",
+    "lint-styles": "stylelint './src/sass/**/*.scss' --syntax scss --fix",
+    "deploy": "gh-pages -d dist"
   },
-  "homepage": "https://Armen-Kazarov.github.io/www-gold-bull",
+  "homepage": "https://armen-kazarov.github.io/www-gold-bull",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/luxplanjay/gulp-boilerplate.git"
@@ -58,6 +59,8 @@
     "yargs": "^17.0.1"
   },
   "dependencies": {
+    "gh-pages": "^4.0.0",
+    "gh-pages-deploy": "^0.5.1",
     "swiper": "^8.3.0"
   }
 }

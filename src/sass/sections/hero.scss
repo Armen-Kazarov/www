@@ -1,5 +1,5 @@
 .hero {
-  background: linear-gradient(180deg, #4D4D4D 0%, rgba(0, 0, 0, 0) 100%), url("../../images/bg-images/header/header-desktop.jpg");
+  background: linear-gradient(180deg, #4D4D4D 0%, rgba(0, 0, 0, 0) 100%), url("../images/bg-images/header/header-desktop.jpg");
   height: 100vh;
   background-repeat: no-repeat;
   background-size: cover;
@@ -40,7 +40,7 @@
 
 @media (max-width: 1199px) {
   .hero {
-    background: linear-gradient(180deg, #4D4D4D 0%, rgba(0, 0, 0, 0) 100%), url("../../images/bg-images/header/header-tablet.jpg");
+    background: linear-gradient(180deg, #4D4D4D 0%, rgba(0, 0, 0, 0) 100%), url("../images/bg-images/header/header-tablet.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     padding: 0;
@@ -73,7 +73,7 @@
 
 @media (max-width: 767px) {
    .hero {
-     background: linear-gradient(180deg, #4D4D4D 0%, rgba(0, 0, 0, 0) 100%), url("../../images/bg-images/header/header-mobile.jpg");
+     background: linear-gradient(180deg, #4D4D4D 0%, rgba(0, 0, 0, 0) 100%), url("../images/bg-images/header/header-mobile.jpg");
      background-repeat: no-repeat;
      background-size: cover;
 
