@@ -45,8 +45,8 @@
   display: block;
   position: absolute;
   visibility: hidden;
-  top: -100%;
-  left: 0;
+  top: 0;
+  right: -100%;;
 }
 
 /* menu elements */
@@ -71,7 +71,7 @@
 }
 #menu__toggle:checked ~ .menu__box {
   visibility: visible;
-  top: 0;
+  right: 0;
 }
 
 .menu__btn > span,
