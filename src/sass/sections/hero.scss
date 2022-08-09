@@ -1,9 +1,6 @@
 .hero {
-  background: linear-gradient(180deg, #4D4D4D 0%, rgba(0, 0, 0, 0) 100%), url("../images/bg-images/header/header-desktop.jpg");
+  background: linear-gradient(180deg, #4D4D4D 0%, rgba(0, 0, 0, 0) 100%), url("../images/bg-images/hero.jpg") center/cover no-repeat;
   height: 100vh;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
   position: relative;
 
   &__text-wrapper {
@@ -16,7 +13,6 @@
   &__title {
     @include font(36px, 700, 42px);
     color: $first-color;
-    // width: 402px;
     margin-bottom: 28px;
 
     &:first-letter {
@@ -26,7 +22,6 @@
 
   &__text {
     @include font(14px, 400, 16px);
-    // width: 330px;
     color: $first-color;
 
     &:first-letter {
@@ -47,9 +42,9 @@
 
 @media (max-width: 1024px) {
   .hero {
-    // background: linear-gradient(180deg, #4D4D4D 0%, rgba(0, 0, 0, 0) 100%), url("../images/bg-images/header/header-tablet.jpg");
-    // background-repeat: no-repeat;
-    // background-size: cover;
+    background-size: 360%;
+    background-position-x: 26%;
+    background-position-y: 64%;
     padding: 0;
     display: flex;
     align-items: center;
@@ -81,9 +76,9 @@
 
 @media (max-width: 767px) {
    .hero {
-    //  background: linear-gradient(180deg, #4D4D4D 0%, rgba(0, 0, 0, 0) 100%), url("../images/bg-images/header/header-mobile.jpg");
-    //  background-repeat: no-repeat;
-    //  background-size: cover;
+    background-size: 550%;
+    background-position-x: 40%;
+    background-position-y: 58%;
 
      &__title {
       width: 100%;

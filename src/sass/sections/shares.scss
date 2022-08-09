@@ -62,6 +62,7 @@
 
   .button {
     @include font(14px, 400, 16px);
+    width: 274px;
     color: $first-color;
     background-color: $secondary-color;
     padding: 12px 42px;

@@ -1,7 +1,5 @@
 .feedback-section {
-  background: linear-gradient(0deg, rgba(248, 250, 255, 0.9), rgba(248, 250, 255, 0.9)), url("../images/bg-images/feedback-section/desktop.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
+  background: linear-gradient(0deg, rgba(248, 250, 255, 0.9), rgba(248, 250, 255, 0.9)), url("../images/bg-images/feedback.jpg") center/cover no-repeat;
   padding: 94px 0 100px;
 
   .feedback-title {
@@ -84,9 +82,6 @@
 
 @media (max-width: 1199px) {
   .feedback-section {
-    background: linear-gradient(0deg, rgba(248, 250, 255, 0.9), rgba(248, 250, 255, 0.9)), url("../images/bg-images/feedback-section/tablet.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
     padding-bottom: 36px;
 
     .feedback-form {
@@ -106,9 +101,6 @@
 
 @media (max-width: 767px) {
   .feedback-section {
-    background: linear-gradient(0deg, rgba(248, 250, 255, 0.9), rgba(248, 250, 255, 0.9)), url("../images/bg-images/feedback-section/mobile.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
     padding-top: 60px;
     padding-bottom: 32px;
 

@@ -1,8 +1,6 @@
 .cycle-section {
   padding: 68px 0 120px;
-  background: linear-gradient(0deg, rgba(4, 4, 4, 0.6), rgba(4, 4, 4, 0.6)), url("../images/bg-images/section-cycle/desktop-bg.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
+  background: linear-gradient(0deg, rgba(4, 4, 4, 0.6), rgba(4, 4, 4, 0.6)), url("../images/bg-images/cycle.jpg") center/cover no-repeat;
 
   .cycle-title {
     color: $first-color;
@@ -36,9 +34,9 @@
   }
 }
 
-@media (max-width: 1199px) {
+@media (max-width: 1024px) {
   .cycle-section {
-    background: linear-gradient(0deg, rgba(4, 4, 4, 0.6), rgba(4, 4, 4, 0.6)), url("../images/bg-images/section-cycle/tablet-bg.jpg");
+    //background: linear-gradient(0deg, rgba(4, 4, 4, 0.6), rgba(4, 4, 4, 0.6)), url("../images/bg-images/section-cycle/tablet-bg.jpg");
     background-repeat: no-repeat;
     background-size: cover;
   }
@@ -49,9 +47,9 @@
     padding-top: 238px;
     position: relative;
     margin-top: 166px;
-    background: linear-gradient(0deg, rgba(4, 4, 4, 0.6), rgba(4, 4, 4, 0.6)), url("../images/bg-images/section-cycle/mobile-bg.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
+    //background: linear-gradient(0deg, rgba(4, 4, 4, 0.6), rgba(4, 4, 4, 0.6)), url("../images/bg-images/section-cycle/mobile-bg.jpg");
+    //background-repeat: no-repeat;
+    //background-size: cover;
 
     .cycle-title-wrapper {
       position: absolute;

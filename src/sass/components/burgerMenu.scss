@@ -37,9 +37,10 @@
 
 /* container menu */
 .menu__box {
-  background: linear-gradient(180deg, #4D4D4D 0%, rgba(0, 0, 0, 0.45) 100%), url("../images/bg-images/header/header-tablet.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
+  background: linear-gradient(180deg, #4D4D4D 0%, rgba(0, 0, 0, 0.45) 100%), url("../images/bg-images/hero.jpg") no-repeat;
+  background-size: 360%;
+  background-position-x: 26%;
+  background-position-y: 64%;
   width: 100vw;
   height: 100vh;
   display: block;
@@ -90,6 +91,12 @@
 }
 
 @media (max-width: 767px) {
+  .menu__box {
+    background-size: 550%;
+    background-position-x: 40%;
+    background-position-y: 58%;
+  }
+
   #menu__toggle:checked ~ .menu__btn {
     top: 40px;
     right: 22px;

@@ -1,8 +1,6 @@
 .special-offer-section {
   padding: 68px 0 120px;
-  background: linear-gradient(0deg, rgba(4, 4, 4, 0.7), rgba(4, 4, 4, 0.7)), url("../images/bg-images/section-special-offer/desktop-bg.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
+  background: linear-gradient(0deg, rgba(4, 4, 4, 0.7), rgba(4, 4, 4, 0.7)), url("../images/bg-images/offer.jpg") center/cover no-repeat;
 
   .title-section-wrapper--indent {
     margin-bottom: 72px;
@@ -73,9 +71,9 @@
 
 @media (max-width: 767px) {
   .special-offer-section {
-    background: linear-gradient(0deg, rgba(4, 4, 4, 0.7), rgba(4, 4, 4, 0.7)), url("../images/bg-images/section-special-offer/mobile-bg.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-position-x: 83%;
+    background-position-y: 32%;
+    background-size: 534%;
     position: relative;
     padding-top: 86px;
     padding-bottom: 78px;

@@ -23,7 +23,7 @@
     align-items: center;
     position: relative;
 
-    img {
+    &__image {
       display: block;
       width: 100%;
       height: 100%;
@@ -56,7 +56,10 @@
       &__article-link {
         @include font(20px, 400, 23px);
         color: $first-color;
-        text-decoration: underline;
+        
+        &:hover {
+          text-decoration: underline;
+        }
         }
       }
 
@@ -116,6 +119,10 @@
     background: #C4C4C4;
     width: 10px;
     height: 10px;
+
+    &:hover {
+      background: #789CE3;
+    }
   }
 
   .swiper-pagination-bullet-active {
@@ -148,6 +155,16 @@
 @media (max-width: 767px) {
   .swiper {
     .swiper-slide {
+      position: relative;
+      overflow: hidden;
+      min-height: 692px;
+
+      &__image {
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+
       .slide-text {
         left: auto;
         bottom: 250px;
@@ -170,16 +187,6 @@
     .swiper-button-prev:after,
     .swiper-button-next:after {
       display: none;
-    }
-  }
-}
-
-@media (min-width: 480px) and (max-width: 767px) {
-  .swiper {
-    .swiper-slide {
-      &__overlay {
-        width: 78%;
-      }
     }
   }
 }
