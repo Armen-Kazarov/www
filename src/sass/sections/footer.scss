@@ -24,6 +24,10 @@
       }
 
       color: $first-color;
+
+      &:hover {
+        text-decoration: underline;
+      }
     }
 
     &__item-link:first-letter {

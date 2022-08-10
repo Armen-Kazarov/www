@@ -126,5 +126,13 @@
         }
       }
     }
+
+    .swiper {
+      .swiper-slide {
+        position: relative;
+        overflow: hidden;
+        min-height: 692px;
+      }
+    }
   }
 }
