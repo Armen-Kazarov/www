@@ -93,6 +93,8 @@
   }
 
   .mobile-list {
+    margin-top: 96px;
+
     text-align: center;
     & :not(:nth-last-child(-n+1)) {
       margin-bottom: 72px;
