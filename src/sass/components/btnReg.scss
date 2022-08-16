@@ -1,11 +1,9 @@
 .btn-registration {
-  display: block;
-  padding: 18px 0;
+  display: inline-block;
+  padding: 18px 24px;
   text-align: center;
-  margin: 0 auto;
   color: $first-color;
   background-color: $secondary-color;
-  width: 126px;
   @include font(14px, 400, 16px);
   border: 1px solid #C4C4C4;
 

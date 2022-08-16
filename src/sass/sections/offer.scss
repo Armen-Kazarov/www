@@ -71,20 +71,18 @@
 
 @media (max-width: 767px) {
   .special-offer-section {
-    background-position-x: 83%;
-    background-position-y: 31%;
-    background-size: 534%;
-    position: relative;
+    background: none;
     padding-top: 68px;
-    padding-bottom: 78px;
-    margin-top: 226px;
+    padding-bottom: 0;
+
+    .container {
+      padding: 0;
+    }
 
     .title-section-wrapper--indent {
-      position: absolute;
-      top: -138px;
-      left: 50%;
-      transform: translateX(-50%);
-      margin-bottom: 0;
+      margin-bottom: 72px;
+      padding-left: 20px;
+      padding-right: 20px;
 
       &::before {
         background-color: $secondary-color;
@@ -97,11 +95,17 @@
    }
 
     .section-offer-content-wrapper {
+      background: linear-gradient(0deg, rgba(4, 4, 4, 0.7), rgba(4, 4, 4, 0.7)), url("../images/bg-images/offer.jpg") center / cover no-repeat;
+      background-position-x: 83%;
+      background-position-y: 31%;
+      background-size: 534%;
       color: $first-color;
       width: 100%;
-      padding-left: 18px;
-      padding-right: 18px;
+      padding-left: 20px;
+      padding-right: 20px;
       text-align: center;
+      padding-top: 86px;
+      padding-bottom: 78px;
 
       .offer-text {
         font-size: 17px;

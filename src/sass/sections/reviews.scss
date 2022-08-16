@@ -16,11 +16,7 @@
     }
 
     .section-description {
-      @extend %text-section-description;
-
-      span {
-        display: block;
-      }
+      @extend %section-description-style;
 
       &--indent {
         margin-bottom: 44px;
